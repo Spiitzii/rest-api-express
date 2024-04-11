@@ -1,0 +1,16 @@
+Request to GET /
+Request to GET /
+Request to GET /
+Request to GET /
+Request to GET /
+Response sent with status 304
+Request to GET /
+Response sent with status 304
+Request to GET /
+Response sent with status 304
+Request to GET /
+Response sent with status 304
+Request to GET /
+Response sent with status 200
+Request to GET /
+Response sent with status 304
