@@ -50,7 +50,7 @@ Teile die folgenden URLs in ihre Bestandteile auf:
 4. ftp://ftp.example.net/public/files/document.pdf
 5. https://www.example.com:443/about_us?utm_source=google&utm_medium=cpc&utm_campaign=spring_sale
 
-# Aufgabe 6: REST-Prinzipien (10 Punkte)
+# Aufgabe 6: REST-Prinzipien (10 Punkte fürs Durchlesen und 30 Zusatzpunkte fürs Erklären)
 
 Recherchiere die sechs REST-Prinzipien und erkläre, was sie bedeuten und warum sie wichtig sind.
 
