@@ -11,29 +11,49 @@ Erkläre die Unterschiede zwischen den vier Haupt-HTTP-Methoden: GET, POST, PUT 
 Zu jeder Anfrage folgt eine Antwort. Wandle die folgenden alltäglichen Aktionen in HTTP-Anfragen und -Antworten um. Füge den Requests eine passende Methode und den Responses eine passenden Code hinzu. Hier ein kleines Beispiel:
 
 **Request:** Ich möchte ein Formular bei einer Behörde einreichen. --> POST
+
 **Response:** Sie haben vergessen das Formular zu unterschreiben. Bitte füllen Sie das Formular vollständig aus. --> 400 Bad Request
 
 Vervollständige die folgenden Beispiele:
 
 **Request:** Können Sie mir bitte die Informationen zu Produkt XYZ geben?
+
 **Response:** Hier sind die Informationen zu Produkt XYZ.
 
+---
+
 **Request:** Ich möchte gerne mein Passwort ändern.
+
 **Response:** Das hat leider nicht funktioniert. Ihr neues Passwort muss mindestens 8 Zeichen lang sein und mindestens einen Buchstaben und eine Zahl enthalten.
 
+---
+
 **Request:** Ich möchte gerne mein Profilbild aktualisieren.
+
 **Response:** Ihr Bild wurde erfolgreich hochgeladen.
 
+---
+
 **Request:** Bitte löschen Sie meinen Benutzeraccount.
+
 **Response:** Entschuldigung, Benutzeraccount kann nicht gelöscht werden. Es gibt noch offene Bestellungen in Ihrem Konto.
 
+---
+
 **Request:** Ich möchte gerne den Artikel mit der ID 12345 in meinem Warenkorb haben.
+
 **Response:** Artikel mit der ID 12345 wurde erfolgreich in Ihrem Warenkorb hinzugefügt.
 
+---
+
 **Request:** Ich möchte gerne den Artikel mit der ID 12345 aus meinem Warenkorb entfernen.
+
 **Response:** Artikel mit der ID 12345 wurde erfolgreich aus Ihrem Warenkorb entfernt.
 
+---
+
 **Request:** Ich möchte gerne eine Übersicht über alle Shampoos in Ihrem Sortiment.
+
 **Response:** Hier sind alle Shampoos in unserem Sortiment.
 
 # Aufgabe 5: URL-Struktur (5 Punkte)
