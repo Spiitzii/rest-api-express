@@ -56,11 +56,11 @@ Vervollständige die folgenden Beispiele:
 
 **Response:** Hier sind alle Shampoos in unserem Sortiment.
 
-# Aufgabe 5: URL-Struktur (5 Punkte)
+# Aufgabe 4: URL-Struktur (5 Punkte)
 
 Erkläre, was eine URL ist und wie sie aufgebaut ist. Nenne die Hauptbestandteile einer URL und erkläre, was sie bedeuten.
 
-# Aufgabe 6: URL-Beispiele (5 Punkte je URL --> 25 Punkte)
+# Aufgabe 5: URL-Beispiele (5 Punkte je URL --> 25 Punkte)
 
 Teile die folgenden URLs in ihre Bestandteile auf:
 
