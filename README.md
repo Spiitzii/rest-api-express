@@ -62,6 +62,44 @@ app.get("/info", (req: Request, res: Response) => {
 });
 ```
 
+## CRUD-Operationen
+
+CRUD steht für Create, Read, Update und Delete. Es sind die vier grundlegenden Funktionen, die in den meisten Datenbanken verwendet werden.
+
+In diesem Projekt werden CRUD-Operationen für Obstsorten implementiert. Dabei können Obstsorten erstellt, gelesen, aktualisiert und gelöscht werden.
+
+CRUD-Operationen werden in Datengetrieben Anwendungen verwendet, um Daten zu verwalten und zu manipulieren. Sie sind eine grundlegende Funktion, die in den meisten Anwendungen benötigt wird.
+
+Ein Endpunkt, der mit einer CRUD-Operation verknüpft ist, enthält in der Regel fünf Routen:
+
+```typescript
+app.get("/fruits", (req: Request, res: Response) => {
+  // Read all fruits
+});
+
+app.get("/fruits/:id", (req: Request, res: Response) => {
+  // Read one fruit
+});
+
+app.post("/fruits", (req: Request, res: Response) => {
+  // Create a fruit
+});
+
+app.put("/fruits/:id", (req: Request, res: Response) => {
+  // Update a fruit
+});
+
+app.delete("/fruits/:id", (req: Request, res: Response) => {
+  // Delete a fruit
+});
+```
+
+## Middleware
+
+Middleware sind Funktionen, die aufgerufen werden, bevor die eigentliche Route ausgeführt wird. Sie können verwendet werden, um Anfragen zu verarbeiten, bevor sie an die Route weitergeleitet werden.
+
+Ein häufig genutztes Beispiel für Middleware ist die Authentifizierung. Hier wird überprüft, ob der Benutzer angemeldet ist, bevor die Route ausgeführt wird.
+
 ## Aufbau des Projekts
 
 Das Projekt ist in verschiedene Dateien und Ordner unterteilt. Jede Datei hat eine spezifische Aufgabe und ist für einen bestimmten Teil des Projekts verantwortlich.
@@ -133,3 +171,7 @@ Types helfen in Typescript weitergehend die Struktur von Daten zu definieren und
 - Schüsselgrößen ausgeben
 - CRUD-Operationen für Obstsorten
 - Anfragen der Nutzer speichern und ausgeben
+
+```
+
+```
