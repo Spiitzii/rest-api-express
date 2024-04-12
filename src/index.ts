@@ -7,6 +7,11 @@ import { notesRouter } from './routes/notes'
 const app = express()
 const port = 3000
 
+// Setup custom middleware
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
 // Setup routes
 
 app.use('/info', infoRouter)
