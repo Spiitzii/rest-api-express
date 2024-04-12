@@ -1,6 +1,8 @@
 import { Request, Response, Router } from 'express'
 import * as fs from 'node:fs'
 // const fs = require('fs')
+import { getNotes } from '../services/data'
+
 
 export const notesRouter = Router()
 
@@ -15,22 +17,45 @@ notesRouter.post('/', (req: Request, res: Response) => { })
 notesRouter.get('/', (req: Request, res: Response) => {
 
   // 1. Inhalte aus der Datei auslesen
-
-  const notesRaw = fs.readFileSync('data/notes.json', 'utf8')
-  const notes = JSON.parse(notesRaw)
-
-  console.log(notes)
-
   // 2. Daten zwischenspeichern und verarbeiten und vorbereiten
-  // Es soll nur das Array zurückgegeben werden
 
-  // const array = 
+  const notes = getNotes()
 
   // 3. Inhalte ausliefern
 
+  res.status(200).send(notes)
+
   // 4. auf Postman Anfrage senden -> überprüfen, ob alles funktioniert
 
-  res.send()
+})
+
+// '/:id' return only one result
+notesRouter.get('/:id', (req: Request, res: Response) => {
+
+  const id = parseInt(req.params.id)
+
+  // 1. Inhalte aus der Datei auslesen
+  // 2. Daten zwischenspeichern und verarbeiten und vorbereiten
+
+  const notes = getNotes() as any[] // Liste von Notizen
+
+  // nur die Notiz finden, die die verlangte ID hat
+
+  const note = notes.find(note => note.id === id)
+  // console.log(note)
+
+  // 3. Inhalte ausliefern
+
+  if (note === undefined) {
+    // wenn wir keine passende Notiz gefunden haben
+    res.status(404).send(`Note with ID ${id} was not found.`)
+  } else {
+    // notiz gefunden
+    res.status(200).send(note)
+  }
+
+  // 4. auf Postman Anfrage senden -> überprüfen, ob alles funktioniert
+
 })
 
 // Update - PUT/PATCH -> TODO: Beispiel
